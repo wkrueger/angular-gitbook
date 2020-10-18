@@ -18,21 +18,23 @@ export class AppComponent {}
 ```
 
 * Solicita a configuração de um mapeamento entre URLs e:
-  * Componentes ou
-  * Módulos com subroteadores ou
-  * Redirecionamentos
+  * Componentes;
+  * Grupos de subrotas;
+  * Módulos com subroteadores;
+  * Redirecionamentos;
 
 Exemplo
 
 ```typescript
 const routing = RouterModule.forRoot([
-  { path: "", component: IntroComponent },
+  { path: "", component: IntroComponent }, //componente
   { path: "gato/:id", component: GatoComponent },
   {
     path: "cachorro",
-    loadChildren: () => import("./Cachorro/Cachorro.module").then((m) => m.CachorroModule), // usado para "code splitting"
+    loadChildren: () => import("./Cachorro/Cachorro.module")
+      .then((m) => m.CachorroModule), // submódulo
   },
-  { path: "capivara", children: [...] },
+  { path: "capivara", children: [...] },  // agrupamento
   { path: "**", redirectTo: '' }
 ])
 
