@@ -1,6 +1,6 @@
 # Serviços e Injeção de Dependências
 
-Uma classe anotada com `@Injectable()` pode ser **atrelada** a um módulo ou componente, ou seja: injetável;
+Uma classe anotada com `@Injectable()` pode ser **atrelada** a um módulo ou componente;
 
 ```typescript
 @Injectable()
