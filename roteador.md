@@ -18,9 +18,9 @@ export class AppComponent {}
 ```
 
 * Solicita a configuração de um mapeamento entre URLs e:
-  * Componentes;
-  * Grupos de subrotas;
-  * Módulos com subroteadores;
+  * Componentes ou;
+  * Grupos de subrotas ou;
+  * Módulos com subroteadores ou;
   * Redirecionamentos;
 
 Exemplo
