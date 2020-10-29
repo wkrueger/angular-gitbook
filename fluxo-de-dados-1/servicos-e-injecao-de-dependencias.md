@@ -63,7 +63,7 @@ Por outro lado, quando um serviço é passado na chave `providers` de um compone
 
 Quando o serviço é fornecido em um componente pela chave `viewProviders`, este é também acessível nos componentes filhos.
 
-Serviços servem como uma peça de estado com escopo delimitado dentro de sua aplicação \(seja essa limita um componente ou módulo\).
+Serviços servem como uma peça de estado com escopo delimitado dentro de sua aplicação \(sendo esse limite um componente ou módulo\).
 
 > Recomendação: NUNCA use `providedIn: "root"`
 
