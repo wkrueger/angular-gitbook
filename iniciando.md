@@ -12,7 +12,7 @@
 
 ### Terminologia
 
-Sempre quando falo em _template Angular_, me refiro a quando se escreve sintaxe de layout \(uma sintaxe similar ao HTML\).
+Sempre quando falo em _template Angular_, me refiro a quando se escreve um arquivo com final .html no projeto angular.
 
-Esta sintaxe é parecida mas não é exatamente HTML pois possui recursos adicionais. Um navegador não a reconheceria diretamente.
+Esta sintaxe não é exatamente HTML pois possui recursos adicionais. Um navegador não a reconheceria diretamente.
 

@@ -2,6 +2,8 @@
 
 Uma classe anotada com `@Injectable()` pode ser **atrelada** a um módulo ou componente;
 
+  - Ex: Se `MeuServico` for atrelado a `MeuComponente`,  a cada instância de `MeuComponente` será criada uma instância de `MeuServico`; Ainda, todos os filhos de `MeuComponente` terão acesso à essa instância\*.
+
 ```typescript
 @Injectable()
 class MeuServico {
