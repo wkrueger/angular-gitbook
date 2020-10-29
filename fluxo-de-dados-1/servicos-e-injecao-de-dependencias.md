@@ -63,9 +63,11 @@ Por outro lado, quando um serviço é passado na chave `providers` de um compone
 
 Quando o serviço é fornecido em um componente pela chave `viewProviders`, este é também acessível nos componentes filhos.
 
-Serviços fornecidos a módulos e a _viewProviders_ trazem funcionalidade paralela ao que faz o _"context"_ no React.
+Serviços servem como uma peça de estado com escopo delimitado dentro de sua aplicação \(seja essa limita um componente ou módulo\).
 
-**Exemplo de uso do viewProviders como estado compartilhado**
+> Recomendação: NUNCA use `providedIn: "root"`
+
+**.Exemplo de uso do viewProviders como estado compartilhado**
 
 * Uma instância de `PessoaService` é criada junto com `PaiComponent`;
 * Esta **mesma** instância é fornecida a `PaiComponent` e `PessoaComponent`;
