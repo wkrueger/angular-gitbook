@@ -9,11 +9,11 @@ Anote uma propriedade com `@Input()` para amarrá-la a uma entrada do componente
   selector: "app-some-component",
   template: `<button type="button">{{ texto }}</button>`,
 })
-export class SomeComponent implements OnChanges {
+export class SomeComponent {
   @Input() texto = ""
 
   ngOnChanges(changes) {
-    // fazer algo
+    console.log(changes)
   }
 }
 ```
@@ -27,8 +27,14 @@ export class ConsumerComponent {}
 ```
 
 * No exemplo acima, um botão é desenhado com o conteúdo "Clique aqui".
-* O método opcional `ngOnChanges` é chamado sempre que uma `@Input()` sofrer alteração.
-* A interface \(também opcional\) `implements OnChanges` trás ajuda de tipos para o método `ngOnChanges`.
+* A linha `@Input() texto` indica que o componente aceita uma propriedade de entrada;
+* A propriedade de entrada é passada no template: 
+
+  ```typescript
+  <app-some-component texto="Clique aqui"></app-some-component>
+  ```
+
+* O método opcional `ngOnChanges` é chamado sempre que uma `@Input()` sofre alteração.
 
 **Saída**
 
