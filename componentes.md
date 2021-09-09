@@ -18,11 +18,11 @@ import { Component } from "@angular/core"
 
 @Component({
   selector: "app-root",
-  template /* ou templateUrl */: `<p>Olá mundo {{ algumValor }}</p>`,
+  template /* ou templateUrl */: `<p>Olá mundo, {{ nomeDaPessoa }}</p>`,
   styleUrls /* ou styles */: ["./app.component.scss"],
 })
 export class AppComponent {
-  algumValor = "Olá mundo"
+  nomeDaPessoa = "Ana"
   umaLista = ["um", "dois", "três"]
 }
 ```
