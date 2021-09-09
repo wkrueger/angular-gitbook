@@ -8,7 +8,7 @@
 * Para interpolação usam-se chaves duplas.
 
 ```markup
-<p>Interpola: {{ algumValor }}</p>
+<p>Olá, {{ nomeDaPessoa }}</p>
 ```
 
 **Passando atributos**
