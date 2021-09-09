@@ -4,6 +4,8 @@ Uma classe anotada com `@Injectable()` pode ser **atrelada** a um módulo ou com
 
   - Ex: Se `MeuServico` for atrelado a `MeuComponente`,  a cada instância de `MeuComponente` será criada uma instância de `MeuServico`; Ainda, todos os filhos de `MeuComponente` terão acesso à essa instância\*.
 
+O serviço:
+
 ```typescript
 @Injectable()
 class MeuServico {
@@ -13,7 +15,7 @@ class MeuServico {
 }
 ```
 
-* Você define a quem o "injetável" está atrelado passando a classe ao atributo `providers` do componente ou módulo;
+Plugando o serviço a um módulo ou a um componente:
 
 ```typescript
 // atrelamento a módulo
