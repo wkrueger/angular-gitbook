@@ -27,7 +27,8 @@
 1. Passa a **string literal** `"algumValor"` para o parâmetro;
 2. Passa a **propriedade** declarada na classe para o parâmetro \(no caso, umaLista= \["um", "dois", "três"\]\)
 3. Quando componentes emitem eventos, usam-se parênteses. Ex: `(click)`, `(hover)`, `(submit)`;
-4. A sintaxe `[(twoWay)]` é um atalho para `[twoWay]="variavel" (twoWayChange)="variavel = $event"`;
+   * `$event` é o valor emitido pelo evento.
+4. A sintaxe `[(twoWay)]` une uma propriedade de saída e uma de entrada em uma mesma notação. É um atalho para `[twoWay]="variavel" (twoWayChange)="variavel = $event"`;
 
 Ver [property binding](https://angular.io/guide/property-binding);
 
@@ -59,6 +60,8 @@ Mais informações em [attribute, class and style bindings](https://angular.io/g
 
 * Elementos em um template podem ser referenciados na respectiva classe com a anotação `@ViewChild()`;
 * Anotações com `#` são usadas pra auxiliar referências.
+
+No exemplo abaixo, acessamos a instância de um componente filho a partir de um componente pai, e chamamos um método.
 
 ```typescript
 // date-picker.component.ts
