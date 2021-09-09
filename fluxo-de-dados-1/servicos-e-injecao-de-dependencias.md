@@ -54,26 +54,16 @@ class MeuComponente {
 ```
 
 * Diz-se aqui que uma instância de `MeuServico` foi **"injetada"** em `MeuComponente`;
-* Caso o serviço não tenha sido especificado em nenhuma chave `providers`, o Angular vai dar erro;
+* Caso o serviço não tenha sido plugado a nenhum componente ou módulo pai, o Angular vai dar erro;
 * Caso o serviço tenha sido providenciado em vários lugares \(no módulo e no componente\), a instância mais local \(a do componente\) é fornecida;
 
 PS:
 
 > Na sintaxe `constructor(private arg) {}` , o `private` é um atalho para que o argumento seja copiado para uma propriedade de mesmo nome na classe. Esta é uma sintaxe extra do TypeScript.
 
-**providers vs. viewProviders**
-
-Serviços fornecidos pela chave `providers` de um módulo são acessíveis em todos os componentes deste módulo.
-
-Por outro lado, quando um serviço é passado na chave `providers` de um componente, ele não é acessível para injeção nos componentes filho.
-
-Quando o serviço é fornecido em um componente pela chave `viewProviders`, este é também acessível nos componentes filhos.
-
-Serviços servem como uma peça de estado com escopo delimitado dentro de sua aplicação \(sendo esse limite um componente ou módulo\).
-
 > Recomendação: NUNCA use `providedIn: "root"`
 
-**.Exemplo de uso do viewProviders como estado compartilhado**
+**.Exemplo de uso do providers como estado compartilhado**
 
 * Uma instância de `PessoaService` é criada junto com `PaiComponent`;
 * Esta **mesma** instância é fornecida a `PaiComponent` e `PessoaComponent`;
@@ -150,7 +140,7 @@ class PessoaComponent {
 }
 ```
 
-**Qual é a utilidade desta complicação**
+**Inversão de Controle**
 
 Além da funcionalidade de delimitação de contexto, a injeção de dependências é de grande utilidade em mocks para testes.
 
