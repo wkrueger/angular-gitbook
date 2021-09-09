@@ -55,6 +55,10 @@ class MeuComponente {
 * Caso o serviço não tenha sido especificado em nenhuma chave `providers`, o Angular vai dar erro;
 * Caso o serviço tenha sido providenciado em vários lugares \(no módulo e no componente\), a instância mais local \(a do componente\) é fornecida;
 
+PS:
+
+> Na sintaxe `constructor(private arg) {}` , o `private` é um atalho para que o argumento seja copiado para uma propriedade de mesmo nome na classe. Esta é uma sintaxe extra do TypeScript.
+
 **providers vs. viewProviders**
 
 Serviços fornecidos pela chave `providers` de um módulo são acessíveis em todos os componentes deste módulo.
