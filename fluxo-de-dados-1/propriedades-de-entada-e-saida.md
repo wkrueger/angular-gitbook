@@ -4,6 +4,8 @@
 
 Anote uma propriedade com `@Input()` para amarrá-la a uma entrada do componente.
 
+Filho:
+
 ```typescript
 @Component({
   selector: "app-some-component",
@@ -17,6 +19,8 @@ export class SomeComponent {
   }
 }
 ```
+
+Pai \(consumudor\):
 
 ```typescript
 @Component({
