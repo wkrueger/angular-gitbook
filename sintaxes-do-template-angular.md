@@ -35,13 +35,29 @@ Ver [property binding](https://angular.io/guide/property-binding);
 **Loops**
 
 ```markup
+<!--
+@Component(...)
+class OComponente {
+  lista = ["Maria", "Ana", "José"]
+}
+-->
+
 <div *ngFor="let item of lista">{{ item }}</div>
 ```
+
+Aqui, esta div será repetida para cada item da lista.
 
 **Condicionais**
 
 ```markup
-<div *ngIf="algumValor"></div>
+<!--
+@Component(...)
+class OComponente {
+  exibirItem = false
+}
+-->
+
+<div *ngIf="exibirItem">Estou ativo.</div>
 ```
 
 Ver [structural directives](https://angular.io/guide/structural-directives);
@@ -49,19 +65,26 @@ Ver [structural directives](https://angular.io/guide/structural-directives);
 **CSS condicional**
 
 ```markup
-<div [class.active]="isActive"></div>
+<!--
+@Component(...)
+class OComponente {
+  itemEstaAtivo = true
+}
+-->
+
+<div [class.active]="itemEstaAtivo"></div>
 ```
 
 Adiciona a classe `active` se a variável for verdadeira.
 
 Mais informações em [attribute, class and style bindings](https://angular.io/guide/attribute-binding);
 
-**Referências**
+**Referenciando elementos**
 
 * Elementos em um template podem ser referenciados na respectiva classe com a anotação `@ViewChild()`;
 * Anotações com `#` são usadas pra auxiliar referências.
 
-No exemplo abaixo, acessamos a instância de um componente filho a partir de um componente pai, e chamamos um método.
+No exemplo abaixo, acessamos a instância de um componente filho \(DatePicker\) a partir de um componente pai \(AppComponent\), e chamamos um método do filho.
 
 ```typescript
 // date-picker.component.ts
@@ -96,9 +119,9 @@ export class AppComponent {
 }
 ```
 
-Observe que, para a anotação de tipo \(que é **opcional**\) usa-se:
+Sobre as anotações de tipo do exemplo acima - lembrando que anotações de tipo são sempre opcionais, você sempre pode só colocar um `any`:
 
-* A própria classe do componente \(`DatePickerComponent`\), quando o elemento referenciado é um componente Angular;
+* Usa-se a própria classe do componente \(`DatePickerComponent`\), quando o elemento referenciado é um componente Angular;
 * `ElementRef` quando é um elemento HTML qualquer;
 * `TemplateRef` quando é uma tag `<ng-template>`
 
