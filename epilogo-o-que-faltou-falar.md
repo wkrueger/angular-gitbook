@@ -10,6 +10,7 @@ A idéia deste artigo é dar uma introdução rápida ao mais importante da fram
 * Testes e2e e unitários
 * Usando \(ou fugindo do\) RxJS;
 * Usando \(ou fugindo do\) cliente HTTP do Angular;
+* Bibliotecas de 3os populares
 * Dentre outros...
 
 Muito obrigado!
