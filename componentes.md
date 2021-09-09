@@ -36,5 +36,9 @@ No **corpo da classe** declaramos propriedades e funções para compor o estado 
 * As propriedades definidas no corpo da classe são acessíveis no HTML a partir da sintaxe de template que veremos adiante;
 * Quando o valor de uma propriedade é alterado \(ex: `algumValor`\), a visualização HTML é atualizada de acordo.
 
+**Ciclo de vida:**
+
+* A classe de componente pode também receber alguns métodos predefinidos relacionados ao _ciclo de vida de componente_ . Usos populares são o `ngAfterViewInit()` \(ao iniciar componente\), `ngOnDestroy()` \(ao desmontar componente\)  e `ngOnChanges()` \(quando uma prop é alterada\). Mais em [lifecycle hooks](https://angular.io/guide/lifecycle-hooks).
+
 Docs: [introduction to components](https://angular.io/guide/architecture-components);
 
