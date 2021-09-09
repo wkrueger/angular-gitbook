@@ -10,7 +10,9 @@ platformBrowserDynamic()
   .catch((err) => console.error(err))
 ```
 
-O módulo raiz aponta que o componente raiz será o `AppComponent`, via propriedade `bootstrap`:
+Um módulo une componentes, submódulos, serviços, diretivas, dentre outros
+
+O módulo raiz `AppModule` aponta que o componente raiz será o `AppComponent`, via propriedade `bootstrap`:
 
 ```typescript
 // app/app.module.ts
