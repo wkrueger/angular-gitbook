@@ -34,7 +34,7 @@ export class AppComponent {
 No **corpo da classe** declaramos propriedades e funções para compor o estado e a lógica do componente.
 
 * As propriedades definidas no corpo da classe são acessíveis no HTML a partir da sintaxe de template que veremos adiante;
-* Quando o valor de uma propriedade é alterado \(ex: `algumValor`\), a visualização HTML é atualizada de acordo.
+* Quando o valor de uma propriedade é alterado \(ex: `nomeDaPessoa`\), a visualização HTML é atualizada de acordo.
 
 **Ciclo de vida:**
 
