@@ -15,7 +15,7 @@
 
 ```markup
 <!-- 1 -->
-<componente entrada="algumValor"></componente>
+<componente entrada="texto texto"></componente>
 <!-- 2 -->
 <componente [entrada]="umaLista"></componente>
 <!-- 3 -->
@@ -24,7 +24,7 @@
 <componente [(twoWay)]="variavel"></componente>
 ```
 
-1. Passa a **string literal** `"algumValor"` para o parâmetro;
+1. Passa a **string literal** `"texto texto"` para o parâmetro;
 2. Passa a **propriedade** declarada na classe para o parâmetro \(no caso, umaLista= \["um", "dois", "três"\]\)
 3. Quando componentes emitem eventos, usam-se parênteses. Ex: `(click)`, `(hover)`, `(submit)`;
    * `$event` é o valor emitido pelo evento.
