@@ -26,9 +26,11 @@ class Filho {
 Este pode ser um tópico complexo. Passo aqui uma recomendação simplista, que está longe de ser uma regra!
 
 * Quando um componente é **reutilizável** ou ele vai se **repetir** \(ex: em um loop\), tende-se a usar propriedades de entrada e de saída; Exemplos:
+
   * Uma linha de uma tabela;
   * Um Cartão;
   * Um _Dropdown_ ;
+
 * Quando uma determinada página possui dados, os quais serão consumidos \(e alterados\) por múltiplos componentes filhos, é interessante que esses dados morem em um _Serviço_ , e seja comunicado aos componentes via injeção de dependência; Exemplo:
   * Uma tela de CRUD;
   * Dados globais da aplicação;
