@@ -5,7 +5,21 @@ Uma aplicação é composta por uma árvore de componentes/elementos. O estado d
 Eventualmente o estado estará armazenado no componente X mas o componente Y também vai querer ter acesso a ele. Para tal comunicação, um dos dois métodos abaixo geralmente é utilizado:
 
 * Propriedades de entrada e saída de componentes;
+
+```markup
+<meu-componente [pessoa]="pessoa"></meu-componente>
+```
+
 * Injeção de dependência \(serviços\);
+
+```typescript
+@Component({
+  template: `<h1>Olá {{ pessoa.nome }}`
+})
+class Filho {
+  constructor(public pessoa: PessoaService) {}
+}
+```
 
 **Quando usar cada tipo de fluxo de dados**
 
