@@ -1,6 +1,6 @@
 # Fluxo de Dados
 
-Uma aplicação é composta por uma árvore de componentes/elementos. O estado da aplicação \(ou seja, os dados de origem\) é atrelado a componentes, através de propriedades da classe.
+Uma aplicação é composta por uma árvore de componentes. O estado da aplicação \(ou seja, os dados de origem\) é atrelado a componentes, através de propriedades da classe.
 
 Eventualmente o estado estará armazenado no componente X mas o componente Y também vai querer ter acesso a ele. Para tal comunicação, um dos dois métodos abaixo geralmente é utilizado:
 
