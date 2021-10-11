@@ -15,4 +15,3 @@
 Sempre quando falo em _template Angular_, me refiro a quando se escreve um arquivo com final .html no projeto angular.
 
 Esta sintaxe não é exatamente HTML pois possui recursos adicionais. Um navegador não a reconheceria diretamente.
-

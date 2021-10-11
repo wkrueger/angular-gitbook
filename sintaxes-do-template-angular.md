@@ -25,7 +25,7 @@
 ```
 
 1. Passa a **string literal** `"texto texto"` para o parâmetro;
-2. Passa a **propriedade** declarada na classe para o parâmetro \(no caso, umaLista= \["um", "dois", "três"\]\)
+2. Passa a **propriedade** declarada na classe para o parâmetro (no caso, umaLista= \["um", "dois", "três"])
 3. Quando componentes emitem eventos, usam-se parênteses. Ex: `(click)`, `(hover)`, `(submit)`;
    * `$event` é o valor emitido pelo evento.
 4. A sintaxe `[(twoWay)]` une uma propriedade de saída e uma de entrada em uma mesma notação. É um atalho para `[twoWay]="variavel" (twoWayChange)="variavel = $event"`;
@@ -84,7 +84,7 @@ Mais informações em [attribute, class and style bindings](https://angular.io/g
 * Elementos em um template podem ser referenciados na respectiva classe com a anotação `@ViewChild()`;
 * Anotações com `#` são usadas pra auxiliar referências.
 
-No exemplo abaixo, acessamos a instância de um componente filho \(DatePicker\) a partir de um componente pai \(AppComponent\), e chamamos um método do filho.
+No exemplo abaixo, acessamos a instância de um componente filho (DatePicker) a partir de um componente pai (AppComponent), e chamamos um método do filho.
 
 ```typescript
 // date-picker.component.ts
@@ -121,13 +121,13 @@ export class AppComponent {
 
 Sobre as anotações de tipo do exemplo acima - lembrando que anotações de tipo são sempre opcionais, você sempre pode só colocar um `any`:
 
-* Usa-se a própria classe do componente \(`DatePickerComponent`\), quando o elemento referenciado é um componente Angular;
+* Usa-se a própria classe do componente (`DatePickerComponent`), quando o elemento referenciado é um componente Angular;
 * `ElementRef` quando é um elemento HTML qualquer;
 * `TemplateRef` quando é uma tag `<ng-template>`
 
 **ng-container**
 
-Se deseja aplicar _ngIf ou_ ngFor sem criar uma div para isso, use ng-container.
+Se deseja aplicar _ngIf ou _ngFor sem criar uma div para isso, use ng-container.
 
 ```markup
 <ng-container *ngFor="let num of umaLista">{{ num }}</ng-container>
@@ -135,9 +135,9 @@ Se deseja aplicar _ngIf ou_ ngFor sem criar uma div para isso, use ng-container.
 
 **ng-template**
 
-Os elementos dentro de um `ng-template` não são diretamente renderizados. Ele é usado para passar um bloco de HTML como variável a um componente ou função \(exemplo: um modal\). Você verá ele sendo usado em bibliotecas de interface de usuário \(ex: Material, Bootstrap, etc\).
+Os elementos dentro de um `ng-template` não são diretamente renderizados. Ele é usado para passar um bloco de HTML como variável a um componente ou função (exemplo: um modal). Você verá ele sendo usado em bibliotecas de interface de usuário (ex: Material, Bootstrap, etc).
 
-Exemplo \(abaixo\): Uma biblioteca especifica a diretiva `hoverPopup` que recebe como entrada uma seção de template. Ao passar o mouse por cima deste componente, um popup com este HTML é exibido.
+Exemplo (abaixo): Uma biblioteca especifica a diretiva `hoverPopup` que recebe como entrada uma seção de template. Ao passar o mouse por cima deste componente, um popup com este HTML é exibido.
 
 ```markup
 <ng-template #popup>
@@ -148,4 +148,3 @@ Exemplo \(abaixo\): Uma biblioteca especifica a diretiva `hoverPopup` que recebe
 ```
 
 Mais informações na [documentação do template Angular](https://angular.io/guide/template-syntax).
-

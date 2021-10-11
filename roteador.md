@@ -46,10 +46,10 @@ const routing = RouterModule.forRoot([
 export class AppModule {}
 ```
 
-* Sempre que um URL é alterado \(ou no carregamento inicial de uma página\), o componente correspondente é carregado no "outlet";
+* Sempre que um URL é alterado (ou no carregamento inicial de uma página), o componente correspondente é carregado no "outlet";
 * Fornece os serviços a seguir que podem ser injetados:
   * `ActivatedRoute` pra determinarmos informações sobre o estado do roteador. Como: qual rota está ativada? Quais os parâmetros de URL?
-  * `Router`, que é usado pra controlar o roteador \(ir para...\);
+  * `Router`, que é usado pra controlar o roteador (ir para...);
 
 ```typescript
 @Component({ ... })
@@ -69,7 +69,7 @@ class AlgumComponente {
 }
 ```
 
-* O uso de links padrão do HTML \(`<a href="/page"/>`\) não é amigável pra SPA's pois fazem recarregar a página toda; Deve ser usada ao invés disso a diretiva `routerLink` fornecida pelo roteador.
+* O uso de links padrão do HTML (`<a href="/page"/>`) não é amigável pra SPA's pois fazem recarregar a página toda; Deve ser usada ao invés disso a diretiva `routerLink` fornecida pelo roteador.
 
 ```markup
 <a [routerLink]="['/hero', hero.id]">Goto hero</a>
@@ -77,5 +77,4 @@ class AlgumComponente {
 
 * **Subroteadores e múltiplos outlets**: Conforme apontado anteriormente, é possível haver "roteadores filho". Neste caso haverá no HTML um `<router-outlet>` dentro de outro. Há também funcionalidade avançada onde um roteador pode controlar múltiplos _outlets_.
 
-Mais informações no \(extenso\) [guia do roteador](https://angular.io/guide/router-tutorial-toh).
-
+Mais informações no (extenso) [guia do roteador](https://angular.io/guide/router-tutorial-toh).

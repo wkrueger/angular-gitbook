@@ -4,7 +4,7 @@ Angular é a última framework de frontend que aprendi. Antes de trabalhar com e
 
 Neste texto, tento trazer um apanhado de como fazer algumas tarefas comuns no Angular, adicionando links para as fatias relevantes da documentação oficial.
 
-O texto presume conhecimento prévio de desenvolvimento web \(HTML/CSS e JS\). Também não explico aqui conceitos do Typescript, mas tendo conhecimento em JS dá pra entender o texto.
+O texto presume conhecimento prévio de desenvolvimento web (HTML/CSS e JS). Também não explico aqui conceitos do Typescript, mas tendo conhecimento em JS dá pra entender o texto.
 
 ### Ferramentas Recomendadas
 
@@ -12,4 +12,3 @@ O texto presume conhecimento prévio de desenvolvimento web \(HTML/CSS e JS\). T
 * VS Code
 * Plugin "Angular Language Service" para o VS Code
 * Plugin "angular inline 2"
-

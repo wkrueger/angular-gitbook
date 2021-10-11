@@ -20,7 +20,7 @@ export class SomeComponent {
 }
 ```
 
-Pai \(consumudor\):
+Pai (consumudor):
 
 ```typescript
 @Component({
@@ -32,12 +32,11 @@ export class ConsumerComponent {}
 
 * No exemplo acima, um botão é desenhado com o conteúdo "Clique aqui".
 * A linha `@Input() texto` indica que o componente aceita uma propriedade de entrada;
-* A propriedade de entrada é passada no template: 
+*   A propriedade de entrada é passada no template: 
 
-  ```typescript
-  <app-some-component texto="Clique aqui"></app-some-component>
-  ```
-
+    ```typescript
+    <app-some-component texto="Clique aqui"></app-some-component>
+    ```
 * O método opcional `ngOnChanges` é chamado sempre que uma `@Input()` sofre alteração.
 
 **Saída**
@@ -77,4 +76,3 @@ class ConsumerComponent {
 ```
 
 Ver [inputs and outputs](https://angular.io/guide/inputs-outputs).
-

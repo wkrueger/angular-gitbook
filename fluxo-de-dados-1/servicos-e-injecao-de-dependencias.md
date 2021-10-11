@@ -2,7 +2,7 @@
 
 Uma classe anotada com `@Injectable()` pode ser **atrelada** a um módulo ou componente;
 
-  - Ex: Se `MeuServico` for atrelado a `MeuComponente`,  a cada instância de `MeuComponente` será criada uma instância de `MeuServico`; Ainda, todos os filhos de `MeuComponente` terão acesso à essa instância\*.
+  \- Ex: Se `MeuServico` for atrelado a `MeuComponente`,  a cada instância de `MeuComponente` será criada uma instância de `MeuServico`; Ainda, todos os filhos de `MeuComponente` terão acesso à essa instância\*.
 
 O serviço:
 
@@ -34,8 +34,8 @@ class MeuModulo {}
 class MeuComponente {}
 ```
 
-* Se você passar o serviço `MeuServico` ao `providers` do componente `MeuComponente`, uma instância desse serviço \(`new MeuServico()`\) será criada para cada `MeuComponente`. Quando `MeuComponente` for destruído, a instância do serviço também é destruída e é invocado o método `ngOnDestroy()`;
-* Se você passar um serviço ao módulo raiz, este serviço efetivamente será um _Singleton_ \(instância global\).
+* Se você passar o serviço `MeuServico` ao `providers` do componente `MeuComponente`, uma instância desse serviço (`new MeuServico()`) será criada para cada `MeuComponente`. Quando `MeuComponente` for destruído, a instância do serviço também é destruída e é invocado o método `ngOnDestroy()`;
+* Se você passar um serviço ao módulo raiz, este serviço efetivamente será um _Singleton_ (instância global).
 
 **Consumindo o serviço**
 
@@ -55,7 +55,7 @@ class MeuComponente {
 
 * Diz-se aqui que uma instância de `MeuServico` foi **"injetada"** em `MeuComponente`;
 * Caso o serviço não tenha sido plugado a nenhum componente ou módulo pai, o Angular vai dar erro;
-* Caso o serviço tenha sido providenciado em vários lugares \(no módulo e no componente\), a instância mais local \(a do componente\) é fornecida;
+* Caso o serviço tenha sido providenciado em vários lugares (no módulo e no componente), a instância mais local (a do componente) é fornecida;
 
 PS:
 
@@ -70,7 +70,7 @@ PS:
 
 Diagrama resumido:
 
-```text
+```
 [PaiComponent]
             |____ providers: [PessoaService]
             |____ injetado:  [PessoaService]
@@ -147,4 +147,3 @@ Além da funcionalidade de delimitação de contexto, a injeção de dependênci
 Quando uma classe especifica que quer consumir `ServicoA`, ela não necessariamente recebe a classe exata `ServicoA`. Você pode passar qualquer outra classe ao `providers` que atenda ao mesmo contrato. Ex: As ferramentas de teste permitem que se instanciem módulos injetando serviços "dublês".
 
 Documentação: [introduction to services and dependency injection](https://angular.io/guide/architecture-services);
-
