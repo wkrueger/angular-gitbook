@@ -1,6 +1,6 @@
 # Uma introdução rápida ao Angular
 
-Angular é a última framework de frontend que aprendi (2019). Antes de trabalhar com ela, eu tinha um pouco de receio pois a documentação inicial parecia um tanto assustadora. Hoje não considero o Angular mais difícil de usar do que as outras frameworks, mas ainda acho que sua documentação não é lá a mais prática.
+Angular é a última framework de frontend que aprendi (2019). Antes de trabalhar com ela, eu tinha um pouco de receio pois a documentação inicial parecia um tanto assustadora. Hoje considero o Angular muito agradável de se trabalhar, mas ainda acho a documentação um tanto pesada de ler. 
 
 Neste texto, tento trazer de uma forma sucinta um apanhado de como fazer tarefas comuns no Angular, adicionando links para as fatias relevantes da documentação oficial. Isto não é um tutorial completo, o objetivo aqui é termos um texto introdutório.
 
