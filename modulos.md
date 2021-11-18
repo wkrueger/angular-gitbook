@@ -28,14 +28,16 @@ import { AppComponent } from "./app.component"
 export class AppModule {}
 ```
 
-* Componentes do Angular devem ser registrados na propriedade `declarations` para estarem disponíveis em templates.
-* A aplicação pode ser dividida em submódulos para podermos configurar o _code splitting_ (não é o intuito desse texto). O _code splitting_ é usado pra dividir sua aplicação em partes menores e evitar que o browser fique 1 minuto parado em uma tela branca pra carregar um JS de 15MB.
+* Componentes do Angular devem ser registrados na propriedade `declarations` para estarem disponíveis em templates. Se você tentar incluir `<meu-componente>` dentro de um template HTML, e esse componente não estiver registrado, o compilador registrará um erro.
+* A aplicação pode ser dividida em submódulos. Os submódulos pode ser usados pra controlar a divisão do JavaScript gerado (code splitting) - sem o uso de módulos todo o JS é concentrado em um grande arquivo que é carregado na inicialização. Com módulos, partes do código podem ser carregadas apenas quando necessário.
 
 Outros itens:
 
-* A chave `imports` é usada pra importar submódulos;
-  * Caso você use uma biblioteca de terceiros, caso tenha separado seu código em submódulos, ou mesmo precise usar algum recurso adicional do Angular, você incluirá itens no `imports`;
+* A chave `imports` é usada pra importar submódulos. Exemplos de uso;
+  * Consumir bibliotecas de terceiros;
+  * O projeto foi dividido em submódulos;
+  * Uso de recursos opcionais do Angular;
 * A chave `providers` é destinada à injeção de dependências. Mais sobre isso adiante!
-* Quando um módulo é para ser consumido por outros via `imports`, usa-se a chave `exports` para determinar quais componentes são expostos;
+* Quando um módulo é criado para ser consumido por outros via `imports`, usa-se a chave `exports` para determinar quais componentes são expostos;
 
 Docs: [introduction to modules](https://angular.io/guide/architecture-modules).
