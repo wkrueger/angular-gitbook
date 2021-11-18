@@ -119,7 +119,9 @@ export class AppComponent {
 }
 ```
 
-Sobre as anotações de tipo do exemplo acima - lembrando que anotações de tipo são sempre opcionais, você sempre pode só colocar um `any`:
+Anotações de tipo (exemplo: `: DatePickerComponent`) são sempre opcionais. O TS permite que se coloque `any` quando em dúvida.
+
+Existem alguns tipos predefinidos para usarmos nas anotações de tipo de `@ViewChild()`s:
 
 * Usa-se a própria classe do componente (`DatePickerComponent`), quando o elemento referenciado é um componente Angular;
 * `ElementRef` quando é um elemento HTML qualquer;
